@@ -1,8 +1,9 @@
+'use client'
 import "./globals.css";
 import Image from "next/image";
 import Navigation from "@/components/shared/Navigation";
 import React from "react";
-
+import { NextUIProvider } from '@nextui-org/react';
 export const metadata = {
   title: "Travel Recommendations",
   description: "Recommending places to visit. ",
@@ -22,14 +23,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+
     <html lang="en">
+
       <body>
         <header>
           <Navigation />
         </header>
+
         <main>{children}</main>
+
       </body>
+
     </html>
+
   );
 }
 
