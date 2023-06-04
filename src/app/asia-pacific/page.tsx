@@ -11,15 +11,19 @@ function AsiaPacific() {
 
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
             <div className="col-span-1">
-                <Tilt scale={1.2} transitionSpeed={1200}>
-        <ImageCard  backgroundImage={"/../public/asia-pacific/fuji.jpg"} title={"Japan"} description={"Visit Japan, Yay Japan :D"} />
+                <Tilt  scale={1.1} transitionSpeed={1200}>
+        <ImageCard  backgroundImage={"/../public/asia-pacific/fuji.jpg"} title={"Japan"} description={"Visit Japan, Yay Japan :D"} path={"/data"} />
                 </Tilt>
                 </div>
             <div className="col-span-1">
-
+                <Tilt  scale={1.1} transitionSpeed={1200}>
+                    <ImageCard  backgroundImage={"/../public/asia-pacific/fuji.jpg"} title={"Japan"} description={"Visit Japan, Yay Japan :D"} path={"/data"} />
+                </Tilt>
             </div>
             <div className="col-span-1">
-
+                <Tilt  scale={1.1} transitionSpeed={1200}>
+                    <ImageCard  backgroundImage={"/../public/asiapacific.jpg"} title={"Japan"} description={"Visit Japan, Yay Japan :D"} path={"/data"} />
+                </Tilt>
             </div>
           </div>
       </aside>
@@ -28,7 +32,7 @@ function AsiaPacific() {
 }
 export default AsiaPacific;
 
-const ImageCard: React.FC<IMovieCard> = ({ backgroundImage, title, description }) => {
+const ImageCard: React.FC<IMovieCard> = ({ backgroundImage, title, description , path}) => {
     return (
         <>
         <div className="max-w-sm mx-auto bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition duration-700 ease-in-out">
@@ -40,6 +44,9 @@ const ImageCard: React.FC<IMovieCard> = ({ backgroundImage, title, description }
                     quality={35}
                     alt="Hero Background"
                     className="hover:blur-sm transition duration-700 ease-in-out"
+                    onClick={() => {
+                        console.log("Image was pressed" + path)
+                    }}
                 />
             </div>
             <div className="p-6 ">
@@ -52,13 +59,36 @@ const ImageCard: React.FC<IMovieCard> = ({ backgroundImage, title, description }
 };
 
 
+/**
+ * Represents a movie card.
+ * @interface IMovieCard
+ */
 interface IMovieCard {
-
+    /**
+     * The URL of the background image for the movie card.
+     * @type {string}
+     */
     backgroundImage: string;
+
+    /**
+     * The title of the movie.
+     * @type {string}
+     */
     title: string;
+
+    /**
+     * The description of the movie.
+     * @type {string}
+     */
     description: string;
 
+    /**
+     * The path to the movie page.
+     * @type {string}
+     */
+    path: string;
 }
+
 
 const Card5 = () => (
   <Card className="shadow-xl" css={{ w: "100%", h: "350px" }}>
