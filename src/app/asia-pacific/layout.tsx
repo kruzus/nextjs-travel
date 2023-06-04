@@ -37,9 +37,6 @@ export default function AsiaPacific({
   );
 }
 
-
-
-
 interface HeaderHeroProps {
   region: string;
   title: string;
@@ -55,7 +52,7 @@ const Hero: React.FC<HeaderHeroProps> = (
       <div className="h-96 sm:h-72 md:h-96 lg:h-112 xl:h-128">
         <Image
           src={backgroundImage}
-        fill={true}
+          fill={true}
           style={{ objectFit: "cover" }}
           quality={35}
           alt="Hero Background"
@@ -64,10 +61,10 @@ const Hero: React.FC<HeaderHeroProps> = (
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-bold mb-4">
-          { title.toUpperCase() }
+          {title.toUpperCase()}
         </h1>
         <p className="text-lg sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl text-white">
-          { description }
+          {description}
         </p>
       </div>
     </div>
