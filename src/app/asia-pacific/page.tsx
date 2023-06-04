@@ -12,17 +12,17 @@ function AsiaPacific() {
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
             <div className="col-span-1">
                 <Tilt  scale={1.1} transitionSpeed={1200}>
-        <ImageCard  backgroundImage={"/../public/asia-pacific/fuji.jpg"} title={"Japan"} description={"Visit Japan, Yay Japan :D"} path={"/data"} />
+        <ImageCard  backgroundImage={"/asia-pacific/fuji.jpg"} title={"Japan"} description={"Visit Japan, Yay Japan :D"} path={"/data"} />
                 </Tilt>
                 </div>
             <div className="col-span-1">
                 <Tilt  scale={1.1} transitionSpeed={1200}>
-                    <ImageCard  backgroundImage={"/../public/asia-pacific/fuji.jpg"} title={"Japan"} description={"Visit Japan, Yay Japan :D"} path={"/data"} />
+                    <ImageCard  backgroundImage={"/asia-pacific/fuji.jpg"} title={"Japan"} description={"Visit Japan, Yay Japan :D"} path={"/data"} />
                 </Tilt>
             </div>
             <div className="col-span-1">
                 <Tilt  scale={1.1} transitionSpeed={1200}>
-                    <ImageCard  backgroundImage={"/../public/asiapacific.jpg"} title={"Japan"} description={"Visit Japan, Yay Japan :D"} path={"/data"} />
+                    <ImageCard  backgroundImage={"/asiapacific.jpg"} title={"Japan"} description={"Visit Japan, Yay Japan :D"} path={"/data"} />
                 </Tilt>
             </div>
           </div>
